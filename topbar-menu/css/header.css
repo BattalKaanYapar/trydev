@@ -1,0 +1,178 @@
+.topbar-menu {
+    background: #414659;
+    width: 100%;
+    height: 75px;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.left-box {
+    padding-left: 20px;
+}
+
+.center-box {
+    display: flex;
+}
+
+.center-box .icons {
+    height: 22px;
+    width: 24px;
+}
+
+.link-box :hover {
+    background-color: #262626;
+}
+
+.link-box a {
+    display: inline-block;
+    width: 100px;
+    height: 75px;
+    text-decoration: none;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.link-box a:active {
+    color: #FFFFFF;
+    border-bottom: 3px solid #547DF9;
+}
+
+.link-box a:visited {
+    color: #FAFAFA;
+}
+
+.right-box {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.right-box a {
+    text-decoration: none;
+}
+
+.inside-right-box {
+    margin-left: 20px;
+}
+
+.right-box a:visited {
+    color: #FFFFFF;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: -10px;
+    right: 10px;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 1px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+
+.slider.round {
+    border-radius: 24px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.user-picture {
+    border-radius: 10px;
+}
+
+.dropbtn {
+    background-color: #414659;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 75px;
+    background-color: #262626;
+    min-width: 200px;
+    z-index: 1;
+    float: left;
+    width: 200px;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    float: left;
+    width: 200px;
+    height: auto;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown-toggle {
+    display: none;
+}
+
+.dropdown-inline {
+    margin: 0 auto;
+    padding-right: 10px;
+}
+
+.dropdown-toggle {
+    position: relative;
+    left: 10px;
+}
